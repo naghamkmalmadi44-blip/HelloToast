@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_toast"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Toast"
+            android:textColor="#FFFFFF"
+            android:background="#2196F3"
+            android:onClick="showToast" />
+
+        <Button
+            android:id="@+id/button_zero"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Zero"
+            android:textColor="#FFFFFF"
+            android:background="#888888"
+            android:onClick="showZero" />
+
+        <Button
+            android:id="@+id/button_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Count"
+            android:textColor="#FFFFFF"
+            android:background="#2196F3"
+            android:onClick="showCount" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:background="#EEEEEE" />
+
+</LinearLayout>
